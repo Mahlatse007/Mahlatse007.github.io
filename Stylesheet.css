@@ -1,9 +1,7 @@
 .body-main {
-  border-radius: 38px;
-  background: #cbd7d6;
-  box-shadow:  8px 8px 16px #999090,
-               -8px -8px 16px #ffffff;
-  margin: auto;
+  background-image: url(myBackroundimage.jpg);
+  max-width: 100%;
+  height: auto;
 }
 /*Images head*/
 .img {
@@ -13,20 +11,22 @@
   margin-right: 20px;
 
 }
-#about {
+
+#aboutMe {
   display: flex;
   align-items: center;
   padding-top: 150px;
+  color: white;
 }
 
 /*Fixing Nav*/
-#nav {
+#navBar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 9999;
 }
-
 
 /* Nav Buttons*/
 .box {
@@ -44,6 +44,7 @@
   text-transform: uppercase;
   font-weight: 900;
   border-radius: 1rem;
+
 }
 
 .box:before {
