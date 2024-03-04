@@ -260,6 +260,66 @@ body {
   transform: scale(0.9, 0.9);
 }
 
+/*Download*/
+.button {
+  position: relative;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 1px solid #17795E;
+  background-color: #209978;
+  overflow: hidden;
+}
+
+.button, .button__icon, .button__text {
+  transition: all 0.3s;
+}
+
+.button .button__text {
+  transform: translateX(22px);
+  color: #fff;
+  font-weight: 600;
+}
+
+.button .button__icon {
+  position: absolute;
+  transform: translateX(109px);
+  height: 100%;
+  width: 39px;
+  background-color: #17795E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button .svg {
+  width: 20px;
+  fill: #fff;
+}
+
+.button:hover {
+  background: #17795E;
+}
+
+.button:hover .button__text {
+  color: transparent;
+}
+
+.button:hover .button__icon {
+  width: 148px;
+  transform: translateX(0);
+}
+
+.button:active .button__icon {
+  background-color: #146c54;
+}
+
+.button:active {
+  border: 1px solid #146c54;
+}
+
 /*Contact me form*/
 .form {
   display: flex;
@@ -341,9 +401,11 @@ body {
 .form label .input:valid + span {
   color: green;
 }
+
 #about {
   flex: 1;
 }
+
 #textarea {
   height: 200px;
 }
@@ -374,4 +436,102 @@ body {
     transform: scale(1.8);
     opacity: 0;
   }
+}
+
+/*footer*/
+.finds{
+  height: auto;
+  transition: .5s linear;
+  padding: 15px;
+  margin: 0 5px;
+  font-weight: 900;
+  border-radius: 1rem;
+}
+
+.socialMedia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialMedia .icon-content {
+  margin: 0 10px;
+  position: relative;
+}
+.socialMedia .icon-content .tooltip {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+.socialMedia .icon-content:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+  top: -50px;
+}
+.socialMedia .icon-content a {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #4d4d4d;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.socialMedia .icon-content a:hover {
+  box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
+}
+.socialMedia .icon-content a svg {
+  position: relative;
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+}
+.socialMedia .icon-content a:hover {
+  color: white;
+}
+.socialMedia .icon-content a .filled {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: #000;
+  transition: all 0.3s ease-in-out;
+}
+.socialMedia .icon-content a:hover .filled {
+  height: 100%;
+}
+.socialMedia .icon-content a[data-social="whatsapp"] .filled,
+.socialMedia .icon-content a[data-social="Whatsapp"] ~ .tooltip {
+  background-color: #1db954;
+}
+.socialMedia .icon-content a[data-social="linkedIn"] .filled,
+.socialMedia .icon-content a[data-social="LinkedIn"] ~ .tooltip {
+  background-color: #bd081c;
+}
+.socialMedia .icon-content a[data-social="facebook"] .filled,
+.socialMedia .icon-content a[data-social="Facebook"] ~ .tooltip {
+  background-color: #0088cc;
+}
+.socialMedia .icon-content a[data-social="telegram"] .filled,
+.socialMedia .icon-content a[data-social="telegram"] ~ .tooltip {
+  background-color: #0088cc;
+}
+}
+.socialMedia .icon-content a[data-social="github"] .filled,
+.socialMedia .icon-content a[data-social="GitHub"] ~ .tooltip {
+  background-color: #0088cc;
 }
