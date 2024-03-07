@@ -1,3 +1,12 @@
+/*.container {
+  width: 350px;
+  border-radius: 1em;
+  overflow: hidden;
+  box-shadow: 0 10px 20px #dbdbdb;
+  font-family: sans-serif;
+}*/
+
+
 .body-main {
   background-image: url(myBackroundimage.jpg);
   max-width: 100%;
@@ -9,26 +18,31 @@
   width: 175px;
   height: auto;
   margin-right: 20px;
-
+  padding: 0.5rem 1rem;
 }
 
 #aboutMe {
   display: flex;
   align-items: center;
-  padding-top: 150px;
+  /*padding-top: 150px;*/
   color: white;
 }
 
-/*Fixing Nav*/
+/*Navigation Bar*/
 #navBar {
+  font-size: 12px;
   position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   z-index: 9999;
+  padding: 0.5rem 1rem;
 }
-
-/* Nav Buttons*/
+button {
+  color: black;
+  text-decoration:  none;
+  outline: none;
+  border: none;
+  background: transparent;
+}
 .box {
   width: 140px;
   height: auto;
@@ -44,9 +58,7 @@
   text-transform: uppercase;
   font-weight: 900;
   border-radius: 1rem;
-
 }
-
 .box:before {
   position: absolute;
   content: '';
@@ -60,7 +72,6 @@
   transform: translateX(100%);
   border-radius: 1rem;
 }
-
 .box:after {
   position: absolute;
   content: '';
@@ -74,31 +85,20 @@
   transform: translateX(-100%);
   border-radius: 1rem;
 }
-
 .box:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
-
 .box:hover:before {
   border-color: #262626;
   height: 100%;
   transform: translateX(0);
   transition: .3s transform linear, .3s height linear .3s;
 }
-
 .box:hover:after {
   border-color: #262626;
   height: 100%;
   transform: translateX(0);
   transition: .3s transform linear, .3s height linear .5s;
-}
-
-button {
-  color: black;
-  text-decoration:  none;
-  outline: none;
-  border: none;
-  background: transparent;
 }
 
 /*Skills and strength*/
@@ -108,7 +108,6 @@ button {
   width: 100%;
   align-items: center;
 }
-
 .color {
   height: 100%;
   border-radius: 10px;
@@ -117,71 +116,42 @@ button {
   align-items: center;
   justify-content: center;
   color: white;
-  font-weight: 600;
+  font-weight: 100;
   letter-spacing: 1px;
   transition: flex 0.1s linear;
   cursor: pointer;
 }
-
 .color span {
   opacity: 0;
   transition: opacity 0.1s linear;
 }
-
 .color:nth-child(1) {
   background: #264653;
 }
-
 .color:nth-child(2) {
   background: #2a9d8f;
 }
-
 .color:nth-child(3) {
   background: #e9c46a;
 }
-
 .color:nth-child(4) {
   background: #f4a261;
 }
-
 .color:nth-child(5) {
   background: #e76f51;
 }
-
-.color:nth-child(6) {
-  background: #264653;
-}
-
-.container {
-  width: 350px;
-  border-radius: 1em;
-  overflow: hidden;
-  box-shadow: 0 10px 20px #dbdbdb;
-  font-family: sans-serif;
-}
-
-
 .color:hover {
   flex: 2;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-
 .color:hover span {
   opacity: 1;
 }
 
 /* Professional Experience*/
-body {
-  font-family: 'Arial', sans-serif;
-  margin: 20px;
-  background-color: #f5f5f5;
-  color: #cbd7d6;
-}
-
 .experience-container {
     margin-top: 20px;
 }
-
 .position {
     background-color: #ede6ef;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -189,45 +159,37 @@ body {
     padding: 20px;
     margin-bottom: 20px;
 }
-
 .position-title {
     font-size: 1.5em;
     font-weight: bold;
     color: #4285f4;
 }
-
 .company {
     color: #555;
 }
-
 .duration {
     color: #777;
     left: 20px
 }
-
 .description {
     margin-top: 10px;
 }
 
 /*Education*/
 .cards {
+  height: 100%;
   display: flex;
   flex-direction: row;
   gap: 15px;
-
 }
-
 .cards .first {
   background-color: #f4a261;
   box-shadow: 0 0 0 5px #ffffff80;
 }
-
 .cards .second {
   background-color: #e76f51;
   box-shadow: 0 0 0 5px #ffffff80;
-
 }
-
 .cards .third {
   background-color: #2a9d8f;
   box-shadow: 0 0 0 5px #ffffff80;
@@ -236,7 +198,6 @@ body {
   background-color: #f4a261;
   box-shadow: 0 0 0 5px #ffffff80;
 }
-
 .cards .card {
   display: flex;
   width: 100px;
@@ -250,20 +211,16 @@ body {
   color: black;
   font-weight: 700;
 }
-
 .cards .card p.tip {
   font-size: 1em;
   font-weight: 700;
 }
-
 .cards .card p.second-text {
   font-size: .7em;
 }
-
 .cards .card:hover {
   transform: scale(1.2, 1.2);
 }
-
 .cards:hover > .card:not(:hover) {
   filter: blur(10px);
   transform: scale(0.9, 0.9);
@@ -281,17 +238,14 @@ body {
   background-color: #209978;
   overflow: hidden;
 }
-
 .button, .button__icon, .button__text {
   transition: all 0.3s;
 }
-
 .button .button__text {
   transform: translateX(22px);
   color: #fff;
   font-weight: 600;
 }
-
 .button .button__icon {
   position: absolute;
   transform: translateX(109px);
@@ -302,29 +256,23 @@ body {
   align-items: center;
   justify-content: center;
 }
-
 .button .svg {
   width: 20px;
   fill: #fff;
 }
-
 .button:hover {
   background: #17795E;
 }
-
 .button:hover .button__text {
   color: transparent;
 }
-
 .button:hover .button__icon {
   width: 148px;
   transform: translateX(0);
 }
-
 .button:active .button__icon {
   background-color: #146c54;
 }
-
 .button:active {
   border: 1px solid #146c54;
 }
@@ -340,7 +288,6 @@ body {
   border-radius: 10px;
   position: relative;
 }
-
 .title {
   font-size: 28px;
   color: white;
@@ -351,7 +298,6 @@ body {
   align-items: center;
   padding-left: 30px;
 }
-
 .title::before,.title::after {
   position: absolute;
   content: "";
@@ -361,23 +307,18 @@ body {
   left: 0px;
   background-color: royalblue;
 }
-
 .message, .signin {
   color: rgba(88, 87, 87, 0.822);
   font-size: 14px;
 }
-
-
 .flex {
   display: flex;
   width: 100%;
   gap: 6px;
 }
-
 .form label {
   position: relative;
 }
-
 .form label .input {
   width: 100%;
   padding: 10px 10px 20px 10px;
@@ -385,7 +326,6 @@ body {
   border: 1px solid rgba(105, 105, 105, 0.397);
   border-radius: 10px;
 }
-
 .form label .input + span {
   position: absolute;
   left: 10px;
@@ -395,30 +335,24 @@ body {
   cursor: text;
   transition: 0.3s ease;
 }
-
 .form label .input:placeholder-shown + span {
   top: 15px;
   font-size: 0.9em;
 }
-
 .form label .input:focus + span,.form label .input:valid + span {
   top: 30px;
   font-size: 0.7em;
   font-weight: 600;
 }
-
 .form label .input:valid + span {
   color: green;
 }
-
 #about {
   flex: 1;
 }
-
 #textarea {
   height: 200px;
 }
-
 #submit {
   border: none;
   outline: none;
@@ -430,11 +364,9 @@ body {
   transform: .3s ease;
   width: 100%;
 }
-
 #submit:hover {
   background-color: rgb(56, 90, 194);
 }
-
 @keyframes pulse {
   from {
     transform: scale(0.9);
@@ -456,13 +388,11 @@ body {
   font-weight: 900;
   border-radius: 1rem;
 }
-
 .socialMedia {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .socialMedia .icon-content {
   margin: 0 10px;
   position: relative;
@@ -547,13 +477,10 @@ body {
 
 /*Project*/
 .card_projects {
-
   flex: 1;
   margin: 10px;
   padding: 20px;
   border: 1px solid #ccc;
-
-
   position: relative;
   width: 300px;
   height: 200px;
@@ -567,19 +494,15 @@ body {
   box-shadow: 0 0 0 5px #ffffff80;
   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-
-
 .img_project{
   width: 48px;
   fill: #333;
   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-
 .card_projects:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
 }
-
 .card__content {
   position: absolute;
   top: 0;
@@ -592,22 +515,18 @@ body {
   transform: rotateX(-90deg);
   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-
 .card_projects:hover .card__content {
   transform: rotateX(0deg);
 }
-
 .card__title {
   margin: 0;
   font-size: 24px;
   color: #333;
   font-weight: 700;
 }
-
 .card_projects:hover svg {
   scale: 0;
 }
-
 .card__description {
   margin: 10px 0 0;
   font-size: 14px;
