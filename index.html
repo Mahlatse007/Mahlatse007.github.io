@@ -1,343 +1,564 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TM</title>
-    <link rel="stylesheet" href="Stylesheet.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>TM | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+      <link rel="stylesheet" href="Stylesheet.css">
   </head>
 
-  <body class="body-main">
-
-    <!-- Navigation Bar-->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navBar">
-          <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"><b>Thupana Mahlatse Makgati<b></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item"><button onclick="scrollToDiv('lead')"><span class="box">About Me</span></button></li>
-                <li class="nav-item"><button onclick="scrollToDiv('palette')"><span class="box">Skills and Strengths</span></button></li>
-                <li class="nav-item"><button onclick="scrollToDiv('position')"><span class="box">Professional Experience</span></button></li>
-                <li class="nav-item"><button onclick="scrollToDiv('cards')"><span class="box">Education and Certification</span></button></li>
-                <li class="nav-item"><button onclick="scrollToDiv('card_projects')"><span class="box">CV and Projects</span></button></li>
-                <li class="nav-item"><button onclick="scrollToDiv('form')"><span class="box">Contact me</span></button></a></li>
-              </ul>
+  <body class="bg-gray-100 text-gray-800 font-sans">
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between items-center h-16">
+          <div class="flex-shrink-0">
+             <a href="#" class="text-xl font-bold text-blue-600">Thupana Mahlatse Makgati</a>
+          </div>
+          <div class="hidden md:block">
+            <div class="ml-10 flex items-center space-x-4">
+              <a href="#about" class="nav-link text-gray-700 hover:text-blue-600">About Me</a>
+              <a href="#skills" class="nav-link text-gray-700 hover:text-blue-600">Skills</a>
+              <a href="#experience" class="nav-link text-gray-700 hover:text-blue-600">Experience</a>
+              <a href="#education" class="nav-link text-gray-700 hover:text-blue-600">Education</a>
+              <a href="#projects" class="nav-link text-gray-700 hover:text-blue-600">Projects</a>
+              <a href="#contact" class="nav-link text-gray-700 hover:text-blue-600">Contact</a>
             </div>
           </div>
-      </nav>
-
-      <!-- About -->
-      <section style="padding-top: 8%">
-        <div class="container" id="aboutMe">
-          <img class="img" src="Mahlatse picture.jpg" alt="Picture not found.">
-            <p class="lead" style="font-weight:600;">I hold a Bachelor's degree in Applied Mathematics and Computer Science, with a strong passion for programming and delivering robust
-               solutions that meet and exceed client expectations. Proficient in a variety of programming languages including C++, Python, as well as front-end
-               technologies such as HTML, CSS, and JavaScript. I am dedicated to continuous learning. I thrive in the dynamic and rapidly evolving landscape of
-               Computer Science and IT, always seeking opportunities for growth and innovation.</p>
-        </div>
-      </section>
-      <hr class="my-4">
-
-      <!-- Skiils and Strengths -->
-      <div class="container">
-        <h2 class="display-6" style="color: white; font-weight:800;">Skills and Strengths</h1>
-          <div class="palette">
-            <div class="color"><span><b>Technical Skills:</b><br> Python<br> R<br> C++<br> HTML<br> CSS<br> JavaScript<br> mySQL<br> SQL Server Database<br> jQuery</span></div>
-            <div class="color"><span><b>Other skills:</b><br>MVC<br> OOP<br> Design Patterns<br> XML<br> Power BI<br> Git/Github<br>
-                Microsoft office 365<br> WordPress<br> Moodle </span></div>
-            <div class="color"><span><b>Operating Systems: </b><br> Windows OS <br> Mac OS<br> Android<br> Linux (Ubuntu/Linux Mint) </span></div>
-            <div class="color"><span><b>Networking: </b> <br> TCP/ IP </span></div>
-            <div class="color"><span><b>Research Skills: </b> <br> Data collection<br> Data Visualization <br> Data/Information Analysis<br> Critical thinking <br> SOP, ITIL<br> Problem-solving<br> Diagnosing<br> Troubleshooting<br> Teamwork</span></div>
+          <div class="md:hidden">
+            <button class="mobile-menu-button p-2 rounded-md text-gray-700 hover:text-blue-600 hover:bg-gray-100 focus:outline-none">
+              <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
           </div>
-          <hr class="my-4">
+        </div>
       </div>
 
-
-      <!-- Professional Experience -->  
-      <div class="container">
-        <header>
-           <h1 style="color: white; font-weight:800;">Professional Experience</h1>
-        </header>
-        <section class="experience-container" style="font-weight:600;">
-          
-            <div class="position">
-                <div class="position-title">Application Support Administrator</div>
-                <div class="company">Cartrack</div>
-                <div class="duration">13 May 2024 - Current</div>
-                <div class="description">
-                  My role involves providing technical support to technicians, ensuring the smooth operation of applications, server and database management, 
-                  resolving issues that may arise, and collaborating with development teams to implement enhancements or updates.<br>
-                  <b>•	Tools and Skills acquired:</b><br>
-                  o	 Technical Proficiency: Mastering PostgreSQL alongside Python, understanding software architecture and troubleshooting methods with Postgres.
-                  o	 Problem-solving Skills: Developed adeptness in diagnosing and resolving issues in PostgreSQL based applications<br>
-                  o	 Collaboration: Worked seamlessly with development teams to implement PostgreSQL enhancements and updates, leveraging Python.<br>
-                  o	 Adaptability: Quickly adapted to changes in PostgreSQL and Python technologies and methodologies.<br>
-                </div>
-            </div>
-
-          
-            <div class="position">
-                <div class="position-title">Junior IT administrator </div>
-                <div class="company">GP Retail Operations</div>
-                <div class="duration">June 2023 - January 2024</div>
-                <div class="description">
-                  I ensured smooth IT operations by promptly resolving day-to-day issues with IT systems, specifically: Moodle (Content Management System) and
-                  implementing security measures aligned with industry best practices and organizational standards. Regular backups were maintained to prevent data loss,
-                  and strict adherence to ICT standards and government enterprise architecture was observed. I applied my expertise in ITIL best practices and maintained
-                  detailed documentation. . I collaborated effectively with internal and external team, demonstrated proficiency with Microsoft office tools.<br>
-                  <b>•	Tools and Skills acquired:</b><br>
-                    o	Content Management System: Moodle - created and managed online courses and e-learning.<br>
-                    o	Operating Systems: Windows, MacOS, Windows Server, Linux, or Unix.<br>
-                    o	Remote Desktop Software: TeamViewer or Remote Desktop Protocol (RDP) for remote support and troubleshooting.<br>
-                    o	Collaboration Tools: Microsoft Teams, Google Meet, Slack, or Zoom for communication and collaboration with team members.<br>
-                    o	Backup and Recovery: Backup strategies and tools for data protection and disaster recovery for Moodle.<br>
-                    o	Security: Understand fundamental security principles, including access control, encryption, firewalls, and malware protection.<br>
-                </div>
-            </div>
-
-            <div class="position">
-                <div class="position-title">IT Support technician</div>
-                <div class="company">SAICA - Dial-a-nerd(Client)</div>
-                <div class="duration">One Day - 06 December 2023</div>
-                <div class="description">
-                  I honed my technical skills during APC examinations, I offered technical assistance and support to ensure the smooth operation
-                  of software and equipment. Swiftly addressing any technical issues minimized disruptions and maintained an efficient examination
-                  process. Identifying and resolving irregularities promptly contributed to upholding the integrity of the examinations. I diligently
-                   reported any irregularities to the appropriate authorities for further investigation and resolution. Additionally, I ensured strict
-                   adherence to protocols outlined by SAICA for conducting the APC examination.<br>
-                  <b>•	Tools and Skills acquired:</b><br>
-                  o	Diagnosing and resolving hardware and software issues in a timely manner to minimize disruptions.<br>
-                  o	Desktop operating systems. <br>
-                  o	SOPs and software standards.<br>
-                  o	Information Technology Infrastructure Library (ITIL)<br>
-                  o	Backup utility. <br>
-                </div>
-            </div>
-
-            <div class="position">
-                <div class="position-title">Junior Data Analyst</div>
-                <div class="company">Velocity Media</div>
-                <div class="duration">April 2023 - May 2023</div>
-                <div class="description">
-                  I collected data from Apify scrapers in various formats such as JSON, CSV, Excel and APIs, meticulously refining the data to guarantee
-                   precision and dependability. Utilized advanced statistical techniques to perform thorough data analysis, extracting valuable insights
-                   essential for informed decision-making. Conducted exploratory data analysis (EDA) and seamlessly integrated findings into WordPress to ensure
-                   relevance for clients and viewers.<br>
-                  <b>•	Tools and Skills acquired:</b><br>
-                  o	Data Collection: Utilized APIs and leveraged Apify scrapers to crawl websites for data acquisition.<br>
-                  o	Preprocessing/Data Cleaning: Used Python libraries like NumPy, and Pandas for data cleaning tasks. Checked for data integrity issues and resolve any inconsistencies.<br>
-                  o	Exploratory Data Analysis (EDA): Explored the dataset to understand its characteristics, patterns, and relationshipso	Exploratory Data Analysis (EDA): Explored the dataset to understand its characteristics, patterns, and relationships using Matplotlip, PowerBI And descriptive statistics. <br>
-                  o	Deployment and Integration: Ensured seamless integration with WordPress for clients and views.<br>
-                </div>
-            </div>
-
-            <div class="position">
-                <div class="position-title">Field Marketer</div>
-                <div class="company">Batho Pele (PTY) Ltd</div>
-                <div class="duration">February 2023 – March 2023</div>
-                <div class="description">
-                  I made sure products are displayed and sold in the best way possible. I work closely with the sales team to decide which products to order. Then, I plan where and how to display them in stores to attract customers' attention. I also keep track of inventory levels and order new stock when needed.
-                  Analyzing sales data to understand what's selling well and what's not, so we can make better decisions in the future. Overall, I was responsible for making sure our products look great, are available when customers want them, and sell as much as possible<br>
-                  <b>•	Tools and Skills acquired:</b><br>
-                  o	Effective written and verbal communication.<br>
-                  o	Time management.<br>
-                  o	Attention to detail.<br>
-                  o	Communication skills.<br>
-                </div>
-            </div>
-          </section>
+      <!-- Mobile menu -->
+      <div class="mobile-menu hidden md:hidden bg-white shadow-lg">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-100">About Me</a>
+          <a href="#skills" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-100">Skills</a>
+          <a href="#experience" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-100">Experience</a>
+          <a href="#education" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-100">Education</a>
+          <a href="#projects" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-100">Projects</a>
+          <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-100">Contact</a>
         </div>
-        <hr class="my-4">
+      </div>
+    </nav>
 
-      <!-- Education And Certification-->
-      <div class="container">
-        <header>
-           <h1 style="color: white; font-weight:800;">Education and Certifications</h1>
-         </header>
-        <div class="cards">
-          <div class="card first">
-            <a style="text-decoration: none;" href="Mahlatse Makgati - BSc Applied Mathematics and Computer Science.pdf">
-              <p class="qualification">BSc Applied Mathematics and Computer Science</p>
-              <p class="school">University of South Africa</p>
-              <p class="YC">Completed: 2022</p>
+    <!-- Hero Section -->
+    <header class="bg-gradient-to-r from-blue-500 to-blue-700 text-white py-20">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 mb-10 md:mb-0">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Thupana Mahlatse Makgati</h1>
+            <p class="text-xl mb-6">Applied Mathematics & Computer Science Graduate</p>
+            <a href="#contact" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition duration-300 inline-block">Get In Touch</a>
+          </div>
+          <div class="md:w-1/2 flex justify-center">
+            <img src="Mahlatse picture.jpg" alt="Profile Picture" class="profile-img w-64 h-64 object-cover border-4 border-white">
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">About Me</h2>
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/3 mb-8 md:mb-0 flex justify-center">
+            <img src="Mahlatse picture.jpg" alt="Profile Picture" class="profile-img w-48 h-48 md:w-64 md:h-64 object-cover">
+          </div>
+          <div class="md:w-2/3 md:pl-12">
+            <p class="text-lg leading-relaxed text-gray-700">
+              I hold a Bachelor's degree in Applied Mathematics and Computer Science, with a strong passion for programming and delivering robust solutions that meet and exceed client expectations. Proficient in a variety of programming languages including C++, Python, as well as front-end technologies such as HTML, CSS, and JavaScript. I am dedicated to continuous learning. I thrive in the dynamic and rapidly evolving landscape of Computer Science and IT, always seeking opportunities for growth and innovation.
+            </p>
+            <div class="mt-8 flex flex-wrap gap-4">
+              <div class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-medium">Problem Solver</div>
+              <div class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-medium">Quick Learner</div>
+              <div class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-medium">Team Player</div>
+              <div class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-medium">Detail Oriented</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 bg-gray-50">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Skills and Strengths</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Technical Skills -->
+          <div class="skill-card bg-white p-6 rounded-lg shadow">
+            <div class="flex items-center mb-4">
+              <div class="bg-blue-100 p-3 rounded-full mr-4">
+                <i class="fas fa-code text-blue-600 text-xl"></i>
+              </div>
+              <h3 class="text-xl font-semibold">Technical Skills</h3>
+            </div>
+            <ul class="space-y-2 text-gray-700">
+              <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i> Python</li>
+              <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i> R</li>
+              <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i> C++</li>
+              <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i> HTML/CSS/JavaScript</li>
+              <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i> mySQL</li>
+              <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i> SQL Server Database</li>
+              <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i> jQuery</li>
+            </ul>
+          </div>
+
+          <!-- Other Skills -->
+          <div class="skill-card bg-white p-6 rounded-lg shadow">
+            <div class="flex items-center mb-4">
+              <div class="bg-blue-100 p-3 rounded-full mr-4">
+                <i class="fas fa-cogs text-blue-600 text-xl"></i>
+              </div>
+              <h3 class="text-xl font-semibold">Other Skills</h3>
+            </div>
+            <ul class="space-y-2 text-gray-700">
+              <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i> MVC</li>
+              <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i> OOP</li>
+              <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i> Design Patterns</li>
+              <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i> XML</li>
+              <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i> Power BI</li>
+              <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i> Git/Github</li>
+              <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i> Microsoft Office 365</li>
+              <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i> WordPress</li>
+              <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i> Moodle</li>
+            </ul>
+          </div>
+
+          <!-- Operating Systems -->
+          <div class="skill-card bg-white p-6 rounded-lg shadow">
+            <div class="flex items-center mb-4">
+              <div class="bg-blue-100 p-3 rounded-full mr-4">
+                <i class="fas fa-laptop text-blue-600 text-xl"></i>
+              </div>
+              <h3 class="text-xl font-semibold">Operating Systems</h3>
+            </div>
+            <ul class="space-y-2 text-gray-700">
+              <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i> Windows OS</li>
+              <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i> Mac OS</li>
+              <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i> Android</li>
+              <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i> Linux (Ubuntu/Linux Mint)</li>
+            </ul>
+          </div>
+
+          <!-- Networking -->
+          <div class="skill-card bg-white p-6 rounded-lg shadow">
+            <div class="flex items-center mb-4">
+              <div class="bg-blue-100 p-3 rounded-full mr-4">
+                <i class="fas fa-network-wired text-blue-600 text-xl"></i>
+              </div>
+              <h3 class="text-xl font-semibold">Networking</h3>
+            </div>
+            <ul class="space-y-2 text-gray-700">
+              <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i> TCP/IP</li>
+            </ul>
+          </div>
+
+          <!-- Research Skills -->
+          <div class="skill-card bg-white p-6 rounded-lg shadow">
+            <div class="flex items-center mb-4">
+              <div class="bg-blue-100 p-3 rounded-full mr-4">
+                <i class="fas fa-search text-blue-600 text-xl"></i>
+              </div>
+              <h3 class="text-xl font-semibold">Research Skills</h3>
+            </div>
+            <ul class="space-y-2 text-gray-700">
+              <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i> Data collection</li>
+              <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i> Data Visualization</li>
+              <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i> Data/Information Analysis</li>
+              <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i> Critical thinking</li>
+              <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i> SOP, ITIL</li>
+              <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i> Problem-solving</li>
+              <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i> Diagnosing</li>
+              <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i> Troubleshooting</li>
+              <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i> Teamwork</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-16 bg-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Professional Experience</h2>
+
+        <div class="space-y-8">
+          <!-- Cartrack -->
+          <div class="experience-card bg-gray-50 p-6 rounded-lg relative pl-8">
+            <div class="absolute -left-3 top-6 h-6 w-6 rounded-full bg-blue-600 border-4 border-white"></div>
+            <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+              <h3 class="text-xl font-semibold text-blue-600">Application Support Administrator</h3>
+              <span class="text-gray-600 font-medium">13 May 2024 - Current</span>
+            </div>
+            <div class="text-gray-600 font-medium mb-4">Cartrack</div>
+            <div class="text-gray-700">
+              <p class="mb-4">My role involves providing technical support to technicians, ensuring the smooth operation of applications, server and database management, resolving issues that may arise, and collaborating with development teams to implement enhancements or updates.</p>
+              <div class="bg-blue-50 p-4 rounded-lg">
+                <h4 class="font-semibold text-blue-800 mb-2">Tools and Skills acquired:</h4>
+                <ul class="list-disc pl-5 space-y-1">
+                  <li><span class="font-medium">Technical Proficiency:</span> Mastering PostgreSQL alongside Python, understanding software architecture and troubleshooting methods with Postgres.</li>
+                  <li><span class="font-medium">Problem-solving Skills:</span> Developed adeptness in diagnosing and resolving issues in PostgreSQL based applications</li>
+                  <li><span class="font-medium">Collaboration:</span> Worked seamlessly with development teams to implement PostgreSQL enhancements and updates, leveraging Python.</li>
+                  <li><span class="font-medium">Adaptability:</span> Quickly adapted to changes in PostgreSQL and Python technologies and methodologies.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- GP Retail Operations -->
+          <div class="experience-card bg-gray-50 p-6 rounded-lg relative pl-8">
+            <div class="absolute -left-3 top-6 h-6 w-6 rounded-full bg-blue-600 border-4 border-white"></div>
+            <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+              <h3 class="text-xl font-semibold text-blue-600">Junior IT administrator</h3>
+              <span class="text-gray-600 font-medium">June 2023 - January 2024</span>
+            </div>
+            <div class="text-gray-600 font-medium mb-4">GP Retail Operations</div>
+            <div class="text-gray-700">
+              <p class="mb-4">I ensured smooth IT operations by promptly resolving day-to-day issues with IT systems, specifically: Moodle (Content Management System) and implementing security measures aligned with industry best practices and organizational standards. Regular backups were maintained to prevent data loss, and strict adherence to ICT standards and government enterprise architecture was observed. I applied my expertise in ITIL best practices and maintained detailed documentation. I collaborated effectively with internal and external team, demonstrated proficiency with Microsoft office tools.</p>
+              <div class="bg-blue-50 p-4 rounded-lg">
+                <h4 class="font-semibold text-blue-800 mb-2">Tools and Skills acquired:</h4>
+                <ul class="list-disc pl-5 space-y-1">
+                  <li><span class="font-medium">Content Management System:</span> Moodle - created and managed online courses and e-learning.</li>
+                  <li><span class="font-medium">Operating Systems:</span> Windows, MacOS, Windows Server, Linux, or Unix.</li>
+                  <li><span class="font-medium">Remote Desktop Software:</span> TeamViewer or Remote Desktop Protocol (RDP) for remote support and troubleshooting.</li>
+                  <li><span class="font-medium">Collaboration Tools:</span> Microsoft Teams, Google Meet, Slack, or Zoom for communication and collaboration with team members.</li>
+                  <li><span class="font-medium">Backup and Recovery:</span> Backup strategies and tools for data protection and disaster recovery for Moodle.</li>
+                  <li><span class="font-medium">Security:</span> Understand fundamental security principles, including access control, encryption, firewalls, and malware protection.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- SAICA -->
+          <div class="experience-card bg-gray-50 p-6 rounded-lg relative pl-8">
+            <div class="absolute -left-3 top-6 h-6 w-6 rounded-full bg-blue-600 border-4 border-white"></div>
+            <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+              <h3 class="text-xl font-semibold text-blue-600">IT Support technician</h3>
+              <span class="text-gray-600 font-medium">One Day - 06 December 2023</span>
+            </div>
+            <div class="text-gray-600 font-medium mb-4">SAICA - Dial-a-nerd(Client)</div>
+            <div class="text-gray-700">
+              <p class="mb-4">I honed my technical skills during APC examinations, I offered technical assistance and support to ensure the smooth operation of software and equipment. Swiftly addressing any technical issues minimized disruptions and maintained an efficient examination process. Identifying and resolving irregularities promptly contributed to upholding the integrity of the examinations. I diligently reported any irregularities to the appropriate authorities for further investigation and resolution. Additionally, I ensured strict adherence to protocols outlined by SAICA for conducting the APC examination.</p>
+              <div class="bg-blue-50 p-4 rounded-lg">
+                <h4 class="font-semibold text-blue-800 mb-2">Tools and Skills acquired:</h4>
+                <ul class="list-disc pl-5 space-y-1">
+                  <li>Diagnosing and resolving hardware and software issues in a timely manner to minimize disruptions.</li>
+                  <li>Desktop operating systems.</li>
+                  <li>SOPs and software standards.</li>
+                  <li>Information Technology Infrastructure Library (ITIL)</li>
+                  <li>Backup utility.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Velocity Media -->
+          <div class="experience-card bg-gray-50 p-6 rounded-lg relative pl-8">
+            <div class="absolute -left-3 top-6 h-6 w-6 rounded-full bg-blue-600 border-4 border-white"></div>
+            <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+              <h3 class="text-xl font-semibold text-blue-600">Junior Data Analyst</h3>
+              <span class="text-gray-600 font-medium">April 2023 - May 2023</span>
+            </div>
+            <div class="text-gray-600 font-medium mb-4">Velocity Media</div>
+            <div class="text-gray-700">
+              <p class="mb-4">I collected data from Apify scrapers in various formats such as JSON, CSV, Excel and APIs, meticulously refining the data to guarantee precision and dependability. Utilized advanced statistical techniques to perform thorough data analysis, extracting valuable insights essential for informed decision-making. Conducted exploratory data analysis (EDA) and seamlessly integrated findings into WordPress to ensure relevance for clients and viewers.</p>
+              <div class="bg-blue-50 p-4 rounded-lg">
+                <h4 class="font-semibold text-blue-800 mb-2">Tools and Skills acquired:</h4>
+                <ul class="list-disc pl-5 space-y-1">
+                  <li><span class="font-medium">Data Collection:</span> Utilized APIs and leveraged Apify scrapers to crawl websites for data acquisition.</li>
+                  <li><span class="font-medium">Preprocessing/Data Cleaning:</span> Used Python libraries like NumPy, and Pandas for data cleaning tasks. Checked for data integrity issues and resolve any inconsistencies.</li>
+                  <li><span class="font-medium">Exploratory Data Analysis (EDA):</span> Explored the dataset to understand its characteristics, patterns, and relationships using Matplotlip, PowerBI And descriptive statistics.</li>
+                  <li><span class="font-medium">Deployment and Integration:</span> Ensured seamless integration with WordPress for clients and views.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Batho Pele -->
+          <div class="experience-card bg-gray-50 p-6 rounded-lg relative pl-8">
+            <div class="absolute -left-3 top-6 h-6 w-6 rounded-full bg-blue-600 border-4 border-white"></div>
+            <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+              <h3 class="text-xl font-semibold text-blue-600">Field Marketer</h3>
+              <span class="text-gray-600 font-medium">February 2023 – March 2023</span>
+            </div>
+            <div class="text-gray-600 font-medium mb-4">Batho Pele (PTY) Ltd</div>
+            <div class="text-gray-700">
+              <p class="mb-4">I made sure products are displayed and sold in the best way possible. I work closely with the sales team to decide which products to order. Then, I plan where and how to display them in stores to attract customers' attention. I also keep track of inventory levels and order new stock when needed. Analyzing sales data to understand what's selling well and what's not, so we can make better decisions in the future. Overall, I was responsible for making sure our products look great, are available when customers want them, and sell as much as possible</p>
+              <div class="bg-blue-50 p-4 rounded-lg">
+                <h4 class="font-semibold text-blue-800 mb-2">Tools and Skills acquired:</h4>
+                <ul class="list-disc pl-5 space-y-1">
+                  <li>Effective written and verbal communication.</li>
+                  <li>Time management.</li>
+                  <li>Attention to detail.</li>
+                  <li>Communication skills.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-16 bg-gray-50">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Education and Certifications</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- BSc -->
+          <div class="education-card bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow">
+            <a href="Mahlatse Makgati - BSc Applied Mathematics and Computer Science.pdf" class="block h-full">
+              <div class="bg-blue-100 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4 mx-auto">
+                <i class="fas fa-graduation-cap text-blue-600 text-xl"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-center mb-2">BSc Applied Mathematics and Computer Science</h3>
+              <p class="text-gray-600 text-center mb-2">University of South Africa</p>
+              <p class="text-gray-500 text-sm text-center">Completed: 2022</p>
             </a>
           </div>
-          <div class="card second">
-              <a style="text-decoration: none;" href="Mahlatse Makgati - National Senior Certificate.pdf">
-                <p class="qualification">National Senior Certificate</p>
-                <p class="school">Northern Academy</p>
-                <p class="YC">Completed: 2016</p>
-              </a>
+
+          <!-- National Senior Certificate -->
+          <div class="education-card bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow">
+            <a href="Mahlatse Makgati - National Senior Certificate.pdf" class="block h-full">
+              <div class="bg-blue-100 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4 mx-auto">
+                <i class="fas fa-certificate text-blue-600 text-xl"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-center mb-2">National Senior Certificate</h3>
+              <p class="text-gray-600 text-center mb-2">Northern Academy</p>
+              <p class="text-gray-500 text-sm text-center">Completed: 2016</p>
+            </a>
           </div>
-          <div class="card third">
-              <a style="text-decoration: none;" href="Mahlatse Makgati - Technical Support Fundamentals.pdf">
-                <p class="qualification">IT Support Fundamentals</p>
-                <p class="school">Google</p>
-                <p class="YC">Completed: 2023</p>
-              </a>
+
+          <!-- IT Support Fundamentals -->
+          <div class="education-card bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow">
+            <a href="Mahlatse Makgati - Technical Support Fundamentals.pdf" class="block h-full">
+              <div class="bg-blue-100 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4 mx-auto">
+                <i class="fas fa-laptop-code text-blue-600 text-xl"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-center mb-2">IT Support Fundamentals</h3>
+              <p class="text-gray-600 text-center mb-2">Google</p>
+              <p class="text-gray-500 text-sm text-center">Completed: 2023</p>
+            </a>
           </div>
-          <div class="card four">
-              <a style="text-decoration: none;" href="Mahlatse Makgati - Data analyst.pdf" alt="File not uploaded">
-                <p class="qualification">Data Analytics</p>
-                <p class="school">Udemy</p>
-                <p class="YC">Completed: 2024</p>
-              </a>
+
+          <!-- Data Analytics -->
+          <div class="education-card bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow">
+            <a href="Mahlatse Makgati - Data analyst.pdf" class="block h-full">
+              <div class="bg-blue-100 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4 mx-auto">
+                <i class="fas fa-chart-line text-blue-600 text-xl"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-center mb-2">Data Analytics</h3>
+              <p class="text-gray-600 text-center mb-2">Udemy</p>
+              <p class="text-gray-500 text-sm text-center">Completed: 2024</p>
+            </a>
           </div>
         </div>
       </div>
-      <hr class="my-4">
+    </section>
 
-      <!--Projects-->
-      <div class="container" >
-        <h1 style="color: white; font-weight:800;">Projects</h1>
-        <div class="container" style="display: flex;">
-            <!--Banking-->
-            <div class="card_projects">
-              <a style="text-decoration: none;" href="https://github.com/Mahlatse007/Bank-QXML">
-              <img src="qt.png" alt="Cant load image." class="img_project">
-                <div class="card__content">
-                  <p class="card__title">Bank-QXML</p>
-                  <p class="card__description">Banking Application developed using QtCreator (C++)</p>
-                </div>
-              </a>
-            </div>
-            <!--Book-->
-            <div class="card_projects">
-              <a style="text-decoration: none;" href="https://github.com/Mahlatse007/Books">
-              <img src="qt.png" alt="Cant load image." class="img_project">
-                <div class="card__content">
-                  <p class="card__title">Book</p>
-                  <p class="card__description">"Book" is developed using the Qt framework (C++)</p>
-                </div>
-              </a>
-            </div>
-            <!--Credit Risk Model-->
-            <div class="card_projects">
-              <a style="text-decoration: none;" href="https://github.com/Mahlatse007/CreditRiskModel">
-              <img src="python.png" alt="Cant load image." class="img_project">
-                <div class="card__content">
-                  <p class="card__title">Credit Risk Model</p>
-                  <p class="card__description">Data cleaning and manipulation Using Numpy library (Python)</p>
-                </div>
-              </a>
-            </div>
-            <!--Absenteeism-->
-            <div class="card_projects">
-              <a style="text-decoration: none;" href="https://github.com/Mahlatse007/Absenteeism">
-              <img src="python.png" alt="Cant load image." class="img_project">
-                <div class="card__content">
-                  <p class="card__title">Absenteeism</p>
-                  <p class="card__description">Preprocessing data using Pandas library (Python)</p>
-                </div>
-              </a>
-            </div>
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Projects</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Bank-QXML -->
+          <div class="project-card bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+            <a href="https://github.com/Mahlatse007/Bank-QXML" class="block">
+              <div class="h-48 bg-gray-100 flex items-center justify-center">
+                <img src="qt.png" alt="Bank-QXML Project" class="h-32 object-contain">
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-semibold mb-2">Bank-QXML</h3>
+                <p class="text-gray-600">Banking Application developed using QtCreator (C++)</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Book -->
+          <div class="project-card bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+            <a href="https://github.com/Mahlatse007/Books" class="block">
+              <div class="h-48 bg-gray-100 flex items-center justify-center">
+                <img src="qt.png" alt="Book Project" class="h-32 object-contain">
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-semibold mb-2">Book</h3>
+                <p class="text-gray-600">"Book" is developed using the Qt framework (C++)</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Credit Risk Model -->
+          <div class="project-card bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+            <a href="https://github.com/Mahlatse007/CreditRiskModel" class="block">
+              <div class="h-48 bg-gray-100 flex items-center justify-center">
+                <img src="python.png" alt="Credit Risk Model Project" class="h-32 object-contain">
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-semibold mb-2">Credit Risk Model</h3>
+                <p class="text-gray-600">Data cleaning and manipulation Using Numpy library (Python)</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Absenteeism -->
+          <div class="project-card bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+            <a href="https://github.com/Mahlatse007/Absenteeism" class="block">
+              <div class="h-48 bg-gray-100 flex items-center justify-center">
+                <img src="python.png" alt="Absenteeism Project" class="h-32 object-contain">
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-semibold mb-2">Absenteeism</h3>
+                <p class="text-gray-600">Preprocessing data using Pandas library (Python)</p>
+              </div>
+            </a>
           </div>
         </div>
-      <hr class="my-4">
+      </div>
+    </section>
 
-      <!-- Curriculum Vitae download -->
-      <div class="container">
-        <h2 style="color: white; font-weight:800; ">Curriculum Vitae</h1>
-        <a style="text-decoration: none;" href="Mahlatse Makgati - CV.pdf">
-          <button class="button" type="button">
-            <span class="button__text">Download</span>
-            <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" id="bdd05811-e15d-428c-bb53-8661459f9307" data-name="Layer 2" class="svg"><path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path><path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path><path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path></svg></span>
+    <!-- CV Download Section -->
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl font-bold mb-8 text-gray-800">Curriculum Vitae</h2>
+        <a href="Mahlatse Makgati - CV.pdf" class="inline-block">
+          <button class="download-btn bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition-all duration-300 flex items-center mx-auto">
+            <span class="mr-2">Download CV</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
           </button>
         </a>
       </div>
-      <hr class="my-4">
+    </section>
 
-      <!-- Contact me-->
-      <div class="container">
-        <header>
-           <h1 style="color: white; font-weight:800;">Contact me</h1>
-       </header>
-        <form class="form">
-          <p class="message">Enter your details:</p>
-              <div class="flex">
-                <label><input required="" placeholder="" type="text" class="input" id="firstname"><span>Firstname</span></label>
-                <label><input required="" placeholder="" type="text" class="input" id="lastname"><span>Lastname</span></label>
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Contact Me</h2>
+
+        <div class="flex flex-col md:flex-row gap-12">
+          <div class="md:w-1/2">
+            <form class="space-y-6">
+              <div class="form-input">
+                <input type="text" id="firstname" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder=" " required>
+                <label for="firstname" class="absolute left-3 top-2 text-gray-500 transition-all duration-300">Firstname</label>
               </div>
-              <label><input required="" placeholder="" type="email" class="input" id="email"><span>Email</span></label>
-              <label><input required="" placeholder="" type="textarea" class="input" id = "textarea"><span>Message</span></label>
-          <button onclick="validateForm()"><span class="box" id="submit">Send</button></span>
-        </form>
+
+              <div class="form-input">
+                <input type="text" id="lastname" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder=" " required>
+                <label for="lastname" class="absolute left-3 top-2 text-gray-500 transition-all duration-300">Lastname</label>
+              </div>
+
+              <div class="form-input">
+                <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder=" " required>
+                <label for="email" class="absolute left-3 top-2 text-gray-500 transition-all duration-300">Email</label>
+              </div>
+
+              <div class="form-input">
+                <textarea id="message" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder=" " required></textarea>
+                <label for="message" class="absolute left-3 top-2 text-gray-500 transition-all duration-300">Message</label>
+              </div>
+
+              <button type="button" onclick="validateForm()" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition-all duration-300">
+                Send Message
+              </button>
+            </form>
+          </div>
+
+          <div class="md:w-1/2">
+            <div class="bg-gray-50 p-8 rounded-lg">
+              <h3 class="text-xl font-semibold mb-4 text-gray-800">Get in touch</h3>
+              <p class="text-gray-600 mb-6">Feel free to reach out to me for any questions or opportunities. I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision.</p>
+
+              <div class="space-y-4">
+                <div class="flex items-center">
+                  <div class="bg-blue-100 p-2 rounded-full mr-4">
+                    <i class="fas fa-envelope text-blue-600"></i>
+                  </div>
+                  <span class="text-gray-700">mahlatsemakgati@gmail.com</span>
+                </div>
+
+                <div class="flex items-center">
+                  <div class="bg-blue-100 p-2 rounded-full mr-4">
+                    <i class="fas fa-phone text-blue-600"></i>
+                  </div>
+                  <span class="text-gray-700">+27 81 453 5921</span>
+                </div>
+
+                <div class="flex items-center">
+                  <div class="bg-blue-100 p-2 rounded-full mr-4">
+                    <i class="fas fa-map-marker-alt text-blue-600"></i>
+                  </div>
+                  <span class="text-gray-700">Johannesburg, South Africa</span>
+                </div>
+              </div>
+
+              <div class="mt-8">
+                <h4 class="text-lg font-medium mb-4 text-gray-800">Connect with me</h4>
+                <div class="flex space-x-4">
+                  <a href="https://www.linkedin.com/in/thupana-makgati-4b500b175" class="social-icon bg-blue-100 p-3 rounded-full text-blue-600 hover:bg-blue-200">
+                    <i class="fab fa-linkedin-in"></i>
+                    <span class="tooltip">LinkedIn</span>
+                  </a>
+
+                  <a href="https://github.com/Mahlatse007" class="social-icon bg-blue-100 p-3 rounded-full text-blue-600 hover:bg-blue-200">
+                    <i class="fab fa-github"></i>
+                    <span class="tooltip">GitHub</span>
+                  </a>
+
+                  <a href="https://www.facebook.com/profile.php?id=100004365222970" class="social-icon bg-blue-100 p-3 rounded-full text-blue-600 hover:bg-blue-200">
+                    <i class="fab fa-facebook-f"></i>
+                    <span class="tooltip">Facebook</span>
+                  </a>
+
+                  <a href="https://wa.me/27814535921" class="social-icon bg-blue-100 p-3 rounded-full text-blue-600 hover:bg-blue-200">
+                    <i class="fab fa-whatsapp"></i>
+                    <span class="tooltip">WhatsApp</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <hr class="my-4">
+    </section>
 
-      <!-- Footer-->
-      <footer class="find">
-          <ul class="socialMedia">
-            <!--LinkedIn-->
-            <li class="icon-content">
-              <a data-social="linkedIn" aria-label="LinkedIn" href="https://www.linkedin.com/in/thupana-makgati-4b500b175">
-                <div class="filled"></div>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1.1em" viewBox="0 0 512 512" stroke-width="0" fill="currentColor" stroke="currentColor" class="w-5 h-5">
-                    <path
-                      d="M444.17 32H70.28C49.85 32 32 46.7 32 66.89v374.72C32 461.91 49.85 480 70.28 480h373.78c20.54 0 35.94-18.21 35.94-38.39V66.89C480.12 46.7 464.6 32 444.17 32zm-273.3 373.43h-64.18V205.88h64.18zM141 175.54h-.46c-20.54 0-33.84-15.29-33.84-34.43 0-19.49 13.65-34.42 34.65-34.42s33.85 14.82 34.31 34.42c-.01 19.14-13.31 34.43-34.66 34.43zm264.43 229.89h-64.18V296.32c0-26.14-9.34-44-32.56-44-17.74 0-28.24 12-32.91 23.69-1.75 4.2-2.22 9.92-2.22 15.76v113.66h-64.18V205.88h64.18v27.77c9.34-13.3 23.93-32.44 57.88-32.44 42.13 0 74 27.77 74 87.64z"
-                    ></path>
-                </svg>
-              </a>
-              <div class="tooltip">LinkedIn</div>
-            </li>
-            <!--Github -->
-            <li class="icon-content">
-              <a data-social="gitHub" aria-label="GitHub" href="https://github.com/Mahlatse007">
-                <div class="filled"></div>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-github" viewBox="0 0 16 16">
-                    <path
-                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
-                    ></path>
-                  </svg>
-              </a>
-              <div class="tooltip">GitHub</div>
-            </li>
-            <!--Facebook -->
-            <li class="icon-content">
-              <a data-social="facebook" aria-label="Facebook" href="https://www.facebook.com/profile.php?id=100004365222970">
-                <div class="filled"></div>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-facebook" viewBox="0 0 16 16">
-                    <path
-                      d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
-                    ></path>
-                  </svg>
-              </a>
-              <div class="tooltip">Facebook</div>
-            </li>
-            <!--WhatsApp-->
-            <li class="icon-content">
-              <a data-social="whatsapp" aria-label="Whatsapp" href="https://www.whatsapp.com/0814535921" >
-                <div class="filled"></div>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-whatsapp" viewBox="0 0 16 16">
-                    <path
-                      d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
-                    ></path>
-                  </svg>
-              </a>
-              <div class="tooltip">WhatsApp</div>
-            <!--Telegram-->
-            <li class="icon-content">
-              <a data-social="telegram" aria-label="Telegram"  href="https://telegram.org/">
-                <div class="filled"></div>
-                <svg viewBox="0 0 100 100" version="1.1">
-                  <path
-                    fill="currentColor"
-                    d="M95,9.9c-1.3-1.1-3.4-1.2-7-0.1c0,0,0,0,0,0c-2.5,0.8-24.7,9.2-44.3,17.3c-17.6,7.3-31.9,13.7-33.6,14.5  c-1.9,0.6-6,2.4-6.2,5.2c-0.1,1.8,1.4,3.4,4.3,4.7c3.1,1.6,16.8,6.2,19.7,7.1c1,3.4,6.9,23.3,7.2,24.5c0.4,1.8,1.6,2.8,2.2,3.2  c0.1,0.1,0.3,0.3,0.5,0.4c0.3,0.2,0.7,0.3,1.2,0.3c0.7,0,1.5-0.3,2.2-0.8c3.7-3,10.1-9.7,11.9-11.6c7.9,6.2,16.5,13.1,17.3,13.9  c0,0,0.1,0.1,0.1,0.1c1.9,1.6,3.9,2.5,5.7,2.5c0.6,0,1.2-0.1,1.8-0.3c2.1-0.7,3.6-2.7,4.1-5.4c0-0.1,0.1-0.5,0.3-1.2  c3.4-14.8,6.1-27.8,8.3-38.7c2.1-10.7,3.8-21.2,4.8-26.8c0.2-1.4,0.4-2.5,0.5-3.2C96.3,13.5,96.5,11.2,95,9.9z M30,58.3l47.7-31.6  c0.1-0.1,0.3-0.2,0.4-0.3c0,0,0,0,0,0c0.1,0,0.1-0.1,0.2-0.1c0.1,0,0.1,0,0.2-0.1c-0.1,0.1-0.2,0.4-0.4,0.6L66,38.1  c-8.4,7.7-19.4,17.8-26.7,24.4c0,0,0,0,0,0.1c0,0-0.1,0.1-0.1,0.1c0,0,0,0.1-0.1,0.1c0,0.1,0,0.1-0.1,0.2c0,0,0,0.1,0,0.1  c0,0,0,0,0,0.1c-0.5,5.6-1.4,15.2-1.8,19.5c0,0,0,0,0-0.1C36.8,81.4,31.2,62.3,30,58.3z"
-                  ></path>
-                </svg>
-              </a>
-              <div class="tooltip">Telegram</div>
-            </li>
-          </ul>
-      </footer>
-
-    <script src="Stylejs.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="mb-4 md:mb-0">
+            <p>&copy; 2024 Thupana Mahlatse Makgati. All rights reserved.</p>
+          </div>
+          <div class="flex space-x-6">
+            <a href="https://www.linkedin.com/in/thupana-makgati-4b500b175" class="text-gray-400 hover:text-white">
+              <i class="fab fa-linkedin-in text-xl"></i>
+            </a>
+            <a href="https://github.com/Mahlatse007" class="text-gray-400 hover:text-white">
+              <i class="fab fa-github text-xl"></i>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100004365222970" class="text-gray-400 hover:text-white">
+              <i class="fab fa-facebook-f text-xl"></i>
+            </a>
+            <a href="https://wa.me/27814535921" class="text-gray-400 hover:text-white">
+              <i class="fab fa-whatsapp text-xl"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  <link rel="stylesheet" href="Stylejs.js">
   </body>
 </html>
